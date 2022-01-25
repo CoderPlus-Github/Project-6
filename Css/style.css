@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-body {
+    width: 100%;
+    height: 100vh;
+}
+
+.main-body .background, .main-body .background img {
+    width: 100%;
+    height: 94vh;
+}
+
+.taskbar {
+    width: 100%;
+    height: 6vh;
+    position: absolute;
+    bottom: 0;
+    background-color: #f3f3f3;
+}
+
+.taskbar .center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0px;
+}
+
+.taskbar .right {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+}
+
+.taskbar-buttons {
+    display: inline-block;
+    width: 30px;
+    height: 100%;
+    margin: 0px 7px;
+    cursor: pointer;
+}
+
+.fi-rr-angle-small-up {
+    color: black;
+}
+
+.overlay {
+    width: 100%;
+    height: 94vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.overlay div {
+    display: flex;
+}
+
+.icons {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.desktop-icons {
+    width: 51px;
+}
+
+.icon-box {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 0px 11px;
+    margin: 8px 0px;
+    cursor: default;
+}
+
+.icon-box:hover {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 0px 10px;
+    margin: 7px 0px;
+}
+
+.icon-box div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box div span {
+    font-size: 13px;
+    padding: 0;
+}
